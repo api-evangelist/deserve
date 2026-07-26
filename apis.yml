@@ -1,20 +1,48 @@
 aid: deserve
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/deserve.png
 name: Deserve
-description: 'Deserve is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Deserve was a mobile-first, cloud-native credit card platform and issuer processor
+  that let regional banks, credit unions, and B2B companies launch and embed consumer, small-business,
+  and commercial co-branded credit and charge cards via APIs and SDKs, with configurable modules
+  for origination, underwriting, rewards, credit policy, and fraud. Founded as SelfScore and backed
+  by Accel, Goldman Sachs, Mastercard, and Visa, the company was acquired by Intuit in April 2025,
+  which took its core technology assets and select team members. As of 2026 the public deserve.com
+  site serves only a "Launching Soon" placeholder and Deserve publishes no live developer portal,
+  API reference, or documentation. This profile captures the residual public surface for the API
+  Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/deserve/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - accel
+x-acquired-by: intuit
+x-acquired-date: '2025-04-18'
+x-status: acquired-site-placeholder
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Fintech
+- Credit Cards
+- Card Issuing
+- Payments
+- Issuer Processor
+- Embedded Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/deserve-domain-security.yml
 - type: Website
   url: http://www.deserve.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
